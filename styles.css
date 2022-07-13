@@ -1,0 +1,85 @@
+body{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	margin: 0; 
+	font-family: 'Open Sans',sans-serif;
+	background-image: url("https://images.pexels.com/photos/2418664/pexels-photo-2418664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-color: #fff;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card
+{
+	background: #fff;
+	color: #000;
+	padding: 40px;
+	border-radius: 30px;
+	width: 100%;
+	max-width: 400px;
+	margin: 10em;
+	box-shadow: 0px 0px 5px;
+}
+.search{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.temp{
+	margin-bottom:0.5em;
+}
+
+
+
+button{
+	margin-left:0.5em;
+	border-radius: 50%;
+	height: 2.5em;
+	width: 2.5em;
+	border: none;
+	background:#2C3639;
+	color: white;
+	padding:5px;
+}
+.search-box{
+	padding: 0.4em 0.8em;
+	border:none;
+	border-radius: 25px;
+	
+	color: #fff;
+	background-color:#2C3639;
+	font-family: sans-serif;
+	font-size: 120%;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+button:hover{
+	background: #73777B;
+}
+.flex
+{
+	display: flex;
+	align-items: center;
+}
+.description{
+	margin-left: 8px;
+}
+
+.weather.loading{
+	visibility: hidden;
+	max-height: 20px;
+	position: relative;;
+}
+
+.weather.loading:after{
+	visibility: visible;
+	content:"loading";
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 20px;
+
+}
